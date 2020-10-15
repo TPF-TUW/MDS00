@@ -126,7 +126,7 @@
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.Options.ShowCloseButton = false;
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(200, 459);
+            this.dockPanel1.Size = new System.Drawing.Size(233, 494);
             this.dockPanel1.Text = "Menu";
             // 
             // dockPanel1_Container
@@ -134,7 +134,7 @@
             this.dockPanel1_Container.Controls.Add(this.accordionControl1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(3, 26);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(193, 430);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(226, 465);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl1
@@ -150,7 +150,7 @@
             this.accordionControlElement7});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(193, 430);
+            this.accordionControl1.Size = new System.Drawing.Size(226, 465);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.Text = "accordionControl1";
             // 
@@ -244,7 +244,6 @@
             this.accordionControlElement16.Name = "accordionControlElement16";
             this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement16.Text = "Color";
-            this.accordionControlElement16.Visible = false;
             // 
             // accordionControlElement17
             // 
@@ -569,16 +568,16 @@
             // panelControl1
             // 
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(200, 0);
+            this.panelControl1.Location = new System.Drawing.Point(233, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(651, 459);
+            this.panelControl1.Size = new System.Drawing.Size(760, 494);
             this.panelControl1.TabIndex = 2;
             // 
             // XtraForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 459);
+            this.ClientSize = new System.Drawing.Size(993, 494);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.dockPanel1);
             this.IsMdiContainer = true;

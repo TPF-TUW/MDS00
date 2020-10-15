@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Linq;
+using DevExpress.LookAndFeel;
 
 namespace MDS00
 {
@@ -12,6 +12,10 @@ namespace MDS00
         public XtraForm1()
         {
             InitializeComponent();
+            iniConfig = new IniFile("Config.ini");
+            lstProcess = new List<Process>();
+            var t=iniConfig.Read("SkinName", "DevExpress");
+            UserLookAndFeel.Default.SetSkinStyle(iniConfig.Read("SkinName", "DevExpress"), iniConfig.Read("SkinPalette", "DevExpress"));
         }
         private const int SW_MAXIMIZE = 3;
         private const int SW_MINIMIZE = 6;
@@ -24,23 +28,35 @@ namespace MDS00
         public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
 
         private List<Process> lstProcess;
+        private Process[] aryProcess;
         private IniFile iniConfig;
 
         private void RunProcess(string processName)
         {
-            if (lstProcess.Any(x => x.ProcessName == processName))
+            aryProcess = Process.GetProcesses();//เก็บ process ที่รันอยู่ทั้งหมด
+
+            foreach (var item in aryProcess)
             {
-                MessageBox.Show(accordionControlElement15.Tag.ToString() + " is running.");
+                if (processName == item.ProcessName)
+                {
+                    MessageBox.Show(processName + " is running.");
+                    return;
+                }
             }
-            else 
+            Process p = Process.Start(processName + ".exe");
+            IntPtr hwndP = IntPtr.Zero;
+            while (hwndP == IntPtr.Zero)
             {
-                Process p = Process.Start(processName + ".exe");
-                p.WaitForInputIdle();
-                SetParent(p.MainWindowHandle, panelControl1.Handle);
-                panelControl1.SizeChanged += Panel1_Resize;
-                ShowWindow(p.MainWindowHandle, SW_MAXIMIZE);
-                lstProcess.Add(p);
+                p.WaitForInputIdle(1000);//wait for the window to be ready for input;
+                p.Refresh();//update process info
+                if (p.HasExited) return;//abort if the process finished before we got a handle.
+                hwndP = p.MainWindowHandle;//cache the window handle
             }
+            SetParent(p.MainWindowHandle, panelControl1.Handle);
+            panelControl1.SizeChanged += Panel1_Resize;
+            ShowWindow(p.MainWindowHandle, SW_MAXIMIZE);
+            lstProcess.Add(p);
+            UserLookAndFeel.Default.SetSkinStyle(iniConfig.Read("SkinName", "DevExpress"),iniConfig.Read("SkinPalette","DevExpress"));
         }
 
         private void Panel1_Resize(object sender, EventArgs e)
@@ -64,7 +80,8 @@ namespace MDS00
         }
         private void XtraForm1_Load(object sender, EventArgs e)
         {
-            iniConfig = new IniFile("Config.ini");
+            
         }
     }
+
 }
