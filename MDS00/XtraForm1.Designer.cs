@@ -126,7 +126,7 @@
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.Options.ShowCloseButton = false;
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(233, 494);
+            this.dockPanel1.Size = new System.Drawing.Size(200, 494);
             this.dockPanel1.Text = "Menu";
             // 
             // dockPanel1_Container
@@ -134,7 +134,7 @@
             this.dockPanel1_Container.Controls.Add(this.accordionControl1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(3, 26);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(226, 465);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(193, 465);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl1
@@ -150,7 +150,7 @@
             this.accordionControlElement7});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(226, 465);
+            this.accordionControl1.Size = new System.Drawing.Size(193, 465);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.Text = "accordionControl1";
             // 
@@ -164,7 +164,6 @@
             this.accordionControlElement12,
             this.accordionControlElement13,
             this.accordionControlElement14});
-            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Administrator";
             this.accordionControlElement1.Visible = false;
@@ -227,12 +226,12 @@
             this.accordionControlElement25,
             this.accordionControlElement26});
             this.accordionControlElement2.Expanded = true;
-            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Master";
             // 
             // accordionControlElement15
             // 
+            this.accordionControlElement15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement15.ImageOptions.Image")));
             this.accordionControlElement15.Name = "accordionControlElement15";
             this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement15.Tag = "M02";
@@ -241,9 +240,12 @@
             // 
             // accordionControlElement16
             // 
+            this.accordionControlElement16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement16.ImageOptions.Image")));
             this.accordionControlElement16.Name = "accordionControlElement16";
             this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement16.Tag = "M03";
             this.accordionControlElement16.Text = "Color";
+            this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
             // 
             // accordionControlElement17
             // 
@@ -323,7 +325,6 @@
             this.accordionControlElement29,
             this.accordionControlElement30,
             this.accordionControlElement31});
-            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Development";
             this.accordionControlElement3.Visible = false;
@@ -368,7 +369,6 @@
             this.accordionControlElement36,
             this.accordionControlElement37,
             this.accordionControlElement38});
-            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "MPS: Master Production Schedule";
             this.accordionControlElement4.Visible = false;
@@ -427,7 +427,6 @@
             this.accordionControlElement45,
             this.accordionControlElement46,
             this.accordionControlElement47});
-            this.accordionControlElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "MRP: Material Resource Planning";
             this.accordionControlElement5.Visible = false;
@@ -493,7 +492,6 @@
             this.accordionControlElement49,
             this.accordionControlElement50,
             this.accordionControlElement51});
-            this.accordionControlElement6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement6.ImageOptions.Image")));
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Shipment";
             this.accordionControlElement6.Visible = false;
@@ -530,7 +528,6 @@
             this.accordionControlElement54,
             this.accordionControlElement55,
             this.accordionControlElement56});
-            this.accordionControlElement7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement7.ImageOptions.Image")));
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "EXIMs";
             this.accordionControlElement7.Visible = false;
@@ -568,9 +565,9 @@
             // panelControl1
             // 
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(233, 0);
+            this.panelControl1.Location = new System.Drawing.Point(200, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(760, 494);
+            this.panelControl1.Size = new System.Drawing.Size(793, 494);
             this.panelControl1.TabIndex = 2;
             // 
             // XtraForm1
@@ -584,7 +581,6 @@
             this.Name = "XtraForm1";
             this.Text = "MDS : Merchandise and Development System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.XtraForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);

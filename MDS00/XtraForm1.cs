@@ -78,9 +78,16 @@ namespace MDS00
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void XtraForm1_Load(object sender, EventArgs e)
+        private void accordionControlElement16_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                RunProcess(accordionControlElement16.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 
