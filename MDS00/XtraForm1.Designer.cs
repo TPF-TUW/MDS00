@@ -164,51 +164,60 @@
             this.accordionControlElement12,
             this.accordionControlElement13,
             this.accordionControlElement14});
+            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Administrator";
-            this.accordionControlElement1.Visible = false;
             // 
             // accordionControlElement8
             // 
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement8.Text = "About me";
+            this.accordionControlElement8.Visible = false;
             // 
             // accordionControlElement9
             // 
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement9.Text = "Branch";
+            this.accordionControlElement9.Visible = false;
             // 
             // accordionControlElement10
             // 
             this.accordionControlElement10.Name = "accordionControlElement10";
             this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement10.Text = "Company";
+            this.accordionControlElement10.Visible = false;
             // 
             // accordionControlElement11
             // 
+            this.accordionControlElement11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement11.ImageOptions.Image")));
             this.accordionControlElement11.Name = "accordionControlElement11";
             this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement11.Tag = "M05";
             this.accordionControlElement11.Text = "Currency";
+            this.accordionControlElement11.Click += new System.EventHandler(this.accordionControlElement11_Click);
             // 
             // accordionControlElement12
             // 
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement12.Text = "Department";
+            this.accordionControlElement12.Visible = false;
             // 
             // accordionControlElement13
             // 
             this.accordionControlElement13.Name = "accordionControlElement13";
             this.accordionControlElement13.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement13.Text = "Function";
+            this.accordionControlElement13.Visible = false;
             // 
             // accordionControlElement14
             // 
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement14.Text = "User";
+            this.accordionControlElement14.Visible = false;
             // 
             // accordionControlElement2
             // 
