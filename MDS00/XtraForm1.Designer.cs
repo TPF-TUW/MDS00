@@ -249,10 +249,12 @@
             // 
             // accordionControlElement17
             // 
+            this.accordionControlElement17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement17.ImageOptions.Image")));
             this.accordionControlElement17.Name = "accordionControlElement17";
             this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement17.Tag = "M04";
             this.accordionControlElement17.Text = "Customer";
-            this.accordionControlElement17.Visible = false;
+            this.accordionControlElement17.Click += new System.EventHandler(this.accordionControlElement17_Click);
             // 
             // accordionControlElement18
             // 
