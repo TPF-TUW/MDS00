@@ -112,6 +112,18 @@ namespace MDS00
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void accordionControlElement18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement18.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 }

@@ -267,10 +267,12 @@
             // 
             // accordionControlElement18
             // 
+            this.accordionControlElement18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement18.ImageOptions.Image")));
             this.accordionControlElement18.Name = "accordionControlElement18";
             this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement18.Tag = "M06";
             this.accordionControlElement18.Text = "Garment Part";
-            this.accordionControlElement18.Visible = false;
+            this.accordionControlElement18.Click += new System.EventHandler(this.accordionControlElement18_Click);
             // 
             // accordionControlElement19
             // 
