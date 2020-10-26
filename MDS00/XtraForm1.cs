@@ -100,7 +100,6 @@ namespace MDS00
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void accordionControlElement11_Click(object sender, EventArgs e)
         {
             try
@@ -112,12 +111,110 @@ namespace MDS00
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void accordionControlElement18_Click(object sender, EventArgs e)
         {
             try
             {
                 RunProcess(accordionControlElement18.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement19_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement19.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement20_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement20.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement21.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement23.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement24_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement24.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement25_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement25.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement26_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement26.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement57_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement57.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement58_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement58.Tag.ToString());
             }
             catch (Exception ex)
             {
