@@ -51,7 +51,6 @@
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement22 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement24 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement25 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -237,7 +236,6 @@
             this.accordionControlElement19,
             this.accordionControlElement20,
             this.accordionControlElement21,
-            this.accordionControlElement22,
             this.accordionControlElement23,
             this.accordionControlElement24,
             this.accordionControlElement25,
@@ -326,13 +324,6 @@
             this.accordionControlElement21.Tag = "M09";
             this.accordionControlElement21.Text = "Production Capacity";
             this.accordionControlElement21.Click += new System.EventHandler(this.accordionControlElement21_Click);
-            // 
-            // accordionControlElement22
-            // 
-            this.accordionControlElement22.Name = "accordionControlElement22";
-            this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement22.Text = "Production Capacity Line";
-            this.accordionControlElement22.Visible = false;
             // 
             // accordionControlElement23
             // 
@@ -679,7 +670,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement22;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement24;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement25;
