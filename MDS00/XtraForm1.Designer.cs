@@ -352,7 +352,7 @@
             this.accordionControlElement25.Name = "accordionControlElement25";
             this.accordionControlElement25.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement25.Tag = "M12";
-            this.accordionControlElement25.Text = "Supplier";
+            this.accordionControlElement25.Text = "Vendor";
             this.accordionControlElement25.Click += new System.EventHandler(this.accordionControlElement25_Click);
             // 
             // accordionControlElement26
