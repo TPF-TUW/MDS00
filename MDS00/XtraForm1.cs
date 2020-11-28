@@ -47,7 +47,7 @@ namespace MDS00
             IntPtr hwndP = IntPtr.Zero;
             while (hwndP == IntPtr.Zero)
             {
-                p.WaitForInputIdle(1000);//wait for the window to be ready for input;
+                p.WaitForInputIdle(500);//wait for the window to be ready for input;
                 p.Refresh();//update process info
                 if (p.HasExited) return;//abort if the process finished before we got a handle.
                 hwndP = p.MainWindowHandle;//cache the window handle
@@ -203,7 +203,7 @@ namespace MDS00
         {
             try
             {
-                RunProcess(accordionControlElement57.Tag.ToString());
+                RunProcess(aceM14.Tag.ToString());
             }
             catch (Exception ex)
             {
@@ -221,12 +221,99 @@ namespace MDS00
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void accordionControlElement8_Click(object sender, EventArgs e)
         {
             try
             {
                 RunProcess(accordionControlElement8.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement27_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement27.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement28_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement28.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement29_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement29.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement9.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement10.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement12.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement13.Tag.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void accordionControlElement14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RunProcess(accordionControlElement14.Tag.ToString());
             }
             catch (Exception ex)
             {
