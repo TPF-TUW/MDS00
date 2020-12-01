@@ -24,12 +24,12 @@ namespace MDS00
 
         private void RunProcess(string processName)
         {
-            DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(typeof(SplashScreen1));
+            CreateSplashScreen(processName);
             var aryProcess = Process.GetProcesses();
             if (aryProcess.Any(x=>x.ProcessName==processName))
             {
                 MessageBox.Show(processName + " is running.");
-                DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm();
+                CloseSplashScreen();
                 return;
             }
             else
@@ -40,6 +40,26 @@ namespace MDS00
                 ShowWindow(p.MainWindowHandle,SW_MAXIMIZE);
                 
             }
+            CloseSplashScreen();
+        }
+        private void CreateSplashScreen(string processName)
+        {
+            DevExpress.XtraSplashScreen.SplashScreenManager.ShowSkinSplashScreen(
+                logoImage: null,
+                title: "MDS",
+                subtitle: "Merchandise and Development System",
+                footer: "Copyright © 2020-2021 IT Integration Team",
+                loading: "Starting..."+processName,
+                parentForm: this,
+                useFadeIn: true,
+                useFadeOut: true,
+                throwExceptionIfAlreadyOpened: true,
+                startPos: DevExpress.XtraSplashScreen.SplashFormStartPosition.Default,
+                location: default
+                );
+        }
+        private void CloseSplashScreen()
+        {
             DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm();
         }
 
